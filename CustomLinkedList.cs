@@ -175,5 +175,25 @@ namespace DataStructuresPractice
             }
             return pos;
         }
+
+        public void SortedLinkedList()
+        {
+            int size = Size();
+
+            Node itr=head;
+            for(int i=0;i<size;i++)
+            {
+                for(int j=0;j<size-i-2;j++)
+                {
+                    if (itr.Value>itr.Next.Value)
+                    {
+                        int temp = itr.Value;
+                        itr.Value = itr.Next.Value;
+                        itr.Next.Value = temp;
+                    }
+                    itr = itr.Next;
+                }
+            }
+        }
     }
 }

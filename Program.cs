@@ -40,6 +40,13 @@ namespace DataStructuresPractice
             list.Display();
             Console.WriteLine("\nThe size of the list is: " + list.Size());
 
+            list.SwapPos(2, 4);
+            list.Display();
+
+            list.SortedLinkedList();
+            list.Display();
+
+
             Console.WriteLine("\n\nStack");
             Stack stack = new Stack();
             stack.Push(2);
