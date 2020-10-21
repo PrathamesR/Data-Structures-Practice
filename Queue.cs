@@ -43,6 +43,12 @@ namespace DataStructuresPractice
             }
         }
 
-
+        public void Dequeue()
+        {
+            if (head != null)
+                head = head.Next;
+            else
+                Console.WriteLine("Queue is Empty");
+        }
     }
 }

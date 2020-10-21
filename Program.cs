@@ -40,9 +40,6 @@ namespace DataStructuresPractice
             list.Display();
             Console.WriteLine("\nThe size of the list is: " + list.Size());
 
-            list.SwapPos(2, 4);
-            list.Display();
-
             list.SortedLinkedList();
             list.Display();
 
@@ -67,6 +64,9 @@ namespace DataStructuresPractice
             queue.Enqueue(6);
             queue.Enqueue(7);
             queue.Enqueue(1);
+            queue.Display();
+
+            queue.Dequeue();
             queue.Display();
 
             Console.Read();
