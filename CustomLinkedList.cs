@@ -81,7 +81,31 @@ namespace DataStructuresPractice
 
         public void Pop()
         {
+            if (itr == null)
+            {
+                Console.WriteLine("List is Empty");
+                return;
+            }
             head = head.Next;
+        }
+
+        public void PopLast()
+        {
+            itr = head;
+            
+            if(itr==null)
+            {
+                Console.WriteLine("List is Empty");
+                return;
+            }
+
+            Node prev=null;
+            while(itr.Next!=null)
+            {
+                prev = itr;
+                itr = itr.Next;
+            }
+            prev.Next = null;
         }
     }
 }

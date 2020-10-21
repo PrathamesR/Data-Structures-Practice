@@ -25,6 +25,10 @@ namespace DataStructuresPractice
             list.Pop();
             list.Display();
 
+            Console.WriteLine();
+            list.PopLast();
+            list.Display();
+
             Console.WriteLine("\n\nStack");
             Stack stack = new Stack();
             stack.Push(2);
