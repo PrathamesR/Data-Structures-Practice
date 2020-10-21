@@ -107,5 +107,25 @@ namespace DataStructuresPractice
             }
             prev.Next = null;
         }
+
+        public int Search(int value)
+        {
+            itr = head;
+            if(itr==null)
+            {
+                Console.WriteLine("List is Empty");
+                return -1;
+            }
+            int pos = 0;
+            while(itr!=null)
+            {
+                pos++;
+                if (itr.Value == value)
+                    return pos;
+                itr = itr.Next;
+            }
+            Console.WriteLine("Element not found");
+            return -1;
+        }
     }
 }

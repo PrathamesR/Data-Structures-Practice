@@ -29,6 +29,9 @@ namespace DataStructuresPractice
             list.PopLast();
             list.Display();
 
+            Console.WriteLine("\nElement found at position: " + list.Search(5));
+            Console.WriteLine("Element found at position: " + list.Search(10));
+
             Console.WriteLine("\n\nStack");
             Stack stack = new Stack();
             stack.Push(2);
