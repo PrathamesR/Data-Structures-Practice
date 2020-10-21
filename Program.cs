@@ -35,6 +35,11 @@ namespace DataStructuresPractice
             list.InsertAfter(10, 50);
             list.Display();
 
+            list.Delete(10);
+            Console.WriteLine();
+            list.Display();
+            Console.WriteLine("\nThe size of the list is: " + list.Size());
+
             Console.WriteLine("\n\nStack");
             Stack stack = new Stack();
             stack.Push(2);

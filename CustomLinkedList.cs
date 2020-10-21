@@ -136,5 +136,44 @@ namespace DataStructuresPractice
                 InsertAt(pos, value);
             }
         }
+
+        public void Delete(int value)
+        {
+            itr = head;
+            if(itr==null)
+            {
+                Console.WriteLine("List is Empty");
+                return;
+            }
+
+            Node prev = null;
+            while(itr.Next!=null)
+            {
+                if (itr.Value == value)
+                {
+                    prev.Next = itr.Next;
+                    return;
+                }
+                else
+                {
+                    prev = itr;
+                    itr = itr.Next;
+                }
+            }
+
+            Console.WriteLine("Element Not Found");
+        }
+
+        public int Size()
+        {
+            itr = head;
+            int pos = 0;
+            while (itr != null)
+            {
+                pos++;
+                itr = itr.Next;
+            }
+            return pos;
+        }
     }
 }
