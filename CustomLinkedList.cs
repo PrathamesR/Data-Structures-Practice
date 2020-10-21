@@ -127,5 +127,14 @@ namespace DataStructuresPractice
             Console.WriteLine("Element not found");
             return -1;
         }
+
+        public void InsertAfter(int prev, int value)
+        {
+            int pos = Search(prev);
+            if(pos!=-1)
+            {
+                InsertAt(pos, value);
+            }
+        }
     }
 }

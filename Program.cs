@@ -32,6 +32,9 @@ namespace DataStructuresPractice
             Console.WriteLine("\nElement found at position: " + list.Search(5));
             Console.WriteLine("Element found at position: " + list.Search(10));
 
+            list.InsertAfter(10, 50);
+            list.Display();
+
             Console.WriteLine("\n\nStack");
             Stack stack = new Stack();
             stack.Push(2);
