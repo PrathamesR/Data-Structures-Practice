@@ -21,6 +21,9 @@ namespace DataStructuresPractice
             list.InsertAt(4, 60);
 
             list.Display();
+            Console.WriteLine();
+            list.Pop();
+            list.Display();
 
             Console.WriteLine("\n\nStack");
             Stack stack = new Stack();

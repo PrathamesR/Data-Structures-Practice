@@ -78,5 +78,10 @@ namespace DataStructuresPractice
                 prev.Next = newNode;
             }
         }
+
+        public void Pop()
+        {
+            head = head.Next;
+        }
     }
 }
